@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:id="@+id/cardProduct"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:layout_margin="7dp"
+    android:background="?android:attr/selectableItemBackground"
+    android:clickable="true"
+    card_view:cardCornerRadius="5dp"
+    card_view:cardElevation="2dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imgItemProduct"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@drawable/bg_rounded"
+            android:scaleType="centerCrop" />
+
+        <RelativeLayout
+            android:id="@+id/layItemProduct"
+            style="@style/MatchMatchLayout"
+            android:layout_margin="5dp">
+
+            <TextView
+                android:id="@+id/txtItemProductTitle"
+                style="@style/MatchWrapLayout"
+                android:ellipsize="end"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center_vertical"
+                android:maxLines="2"
+                android:padding="4dp"
+                android:text=""
+                android:textColor="#212121"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/txtItemProductPrice"
+                style="@style/WrapWrapLayout"
+                android:layout_below="@id/txtItemProductTitle"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="3dp"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:padding="4dp"
+                android:text=""
+                android:textColor="#fb8c00"
+                android:textSize="11sp" />
+
+            <RatingBar
+                android:id="@+id/ratingBar"
+                style="?android:attr/ratingBarStyleSmall"
+                android:layout_width="88dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignTop="@+id/txtItemProductLocation"
+                android:layout_marginEnd="12dp"
+                android:max="5"
+                android:padding="5dp"
+                android:progressTint="#ffc400"
+                android:rating="5"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/txtItemProductLocation"
+                style="@style/WrapWrapLayout"
+                android:layout_below="@+id/txtItemProductPrice"
+                android:drawableLeft="@drawable/ic_location_on"
+                android:drawablePadding="3dp"
+                android:drawableTint="@color/material_red"
+                android:fontFamily="sans-serif-medium"
+                android:padding="5dp"
+                android:text=""
+                android:textColor="#757575"
+                android:textSize="15sp"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/layDiscount"
+                style="@style/MatchWrapLayout"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/txtItemProductDisc"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/colorPrimary"
+                    android:gravity="center"
+                    android:singleLine="false"
+                    android:text="0%"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

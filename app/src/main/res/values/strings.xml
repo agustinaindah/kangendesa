@@ -1,0 +1,118 @@
+<resources>
+    <string name="app_name">Kangen Desa</string>
+
+    <string name="base_url">http://kangendesa.com/</string>
+    <string name="X_API_KEY">S3l4m4ny4-G435</string>
+
+    <string name="action_back_pressed">Tekan sekali lagi untuk keluar</string>
+
+    <!--pesan harus diisi-->
+    <string name="msg_empty">Harap diisi</string>
+    <string name="msg_not_valid">Tidak valid</string>
+    <string name="no_data">Cari Perjalanan Anda</string>
+    <string name="username"><b>USERNAME</b></string>
+    <string name="password"><b>PASSWORD</b></string>
+    <string name="firstname">FIRST NAME</string>
+    <string name="lastname">LAST NAME</string>
+    <string name="email">EMAIL</string>
+    <string name="confirmpassword">CONFIRM PASSWORD</string>
+    <string name="title_activity_detail_tour">DetailTourActivity</string>
+    <string name="large_text">
+        "Material is the metaphor.\n\n"
+
+        "A material metaphor is the unifying theory of a rationalized space and a system of motion."
+        "The material is grounded in tactile reality, inspired by the study of paper and ink, yet "
+        "technologically advanced and open to imagination and magic.\n"
+        "Surfaces and edges of the material provide visual cues that are grounded in reality. The "
+        "use of familiar tactile attributes helps users quickly understand affordances. Yet the "
+        "flexibility of the material creates new affordances that supercede those in the physical "
+        "world, without breaking the rules of physics.\n"
+        "The fundamentals of light, surface, and movement are key to conveying how objects move, "
+        "interact, and exist in space and in relation to each other. Realistic lighting shows "
+        "seams, divides space, and indicates moving parts.\n\n"
+
+        "Bold, graphic, intentional.\n\n"
+
+        "The foundational elements of print based design typography, grids, space, scale, color, "
+        "and use of imagery guide visual treatments. These elements do far more than please the "
+        "eye. They create hierarchy, meaning, and focus. Deliberate color choices, edge to edge "
+        "imagery, large scale typography, and intentional white space create a bold and graphic "
+        "interface that immerse the user in the experience.\n"
+        "An emphasis on user actions makes core functionality immediately apparent and provides "
+        "waypoints for the user.\n\n"
+
+        "Motion provides meaning.\n\n"
+
+        "Motion respects and reinforces the user as the prime mover. Primary user actions are "
+        "inflection points that initiate motion, transforming the whole design.\n"
+        "All action takes place in a single environment. Objects are presented to the user without "
+        "breaking the continuity of experience even as they transform and reorganize.\n"
+        "Motion is meaningful and appropriate, serving to focus attention and maintain continuity. "
+        "Feedback is subtle yet clear. Transitions are efﬁcient yet coherent.\n\n"
+    </string>
+    <string name="action_settings">Settings</string>
+    <string name="label_register">Register</string>
+    <string name="loading">Loading...</string>
+    <string name="msg_not_connect">Tidak ada jaringan</string>
+    <string name="label_login">Login</string>
+    <string name="label_forgotpassword">Forgot Password</string>
+    <string name="text_error">Koneksi internet tidak ditemukan\nPeriksa kembali koneksi internet anda</string>
+    <string name="phone">Phone</string>
+    <string name="address">Address</string>
+    <string name="country">Country</string>
+    <string name="state">State</string>
+    <string name="bank">Bank</string>
+    <string name="payment_method">Payment Method</string>
+    <string name="male">Laki - Laki</string>
+    <string name="female">Perempuan</string>
+    <string name="transportPublic">Kendaraan Umum</string>
+    <string name="transportPrivate">Kendaraan Pribadi</string>
+    <string name="transport">Kendaraan</string>
+    <string name="priceQuestion">Silakan menentukan harga paket wisata yang Anda tawarkan. Tentukan apakah harga tersebut sudah termasuk biaya makan atau tidak. Anda bisa memberi biaya tambahan untuk tambahan layanan yang bisa Anda tawarkan</string>
+    <string name="all">Semua Termasuk</string>
+    <string name="excludingMeals">Tidak Termasuk Makan</string>
+    <string name="notAll">Tidak Termasuk Makan, Transportasi, Retribusi</string>
+    <string name="submit">Anda telah melengkapi daftar paket wisata Anda. Kami akan meninjau sebelum paket wisata Anda tampil di website kami. Ini akan memakan waktu sekitar 3 sampai 4 hari. Jika Anda sudah yakin telah mengisi daftar paket wisata dengan benar, silakan klik Submit.</string>
+
+    <string-array name="data_country">
+        <item>@string/country</item>
+        <item>Indonesia</item>
+        <item>Afghanistan</item>
+        <item>Albania</item>
+        <item>Algeria</item>
+    </string-array>
+
+    <string-array name="data_state">
+        <item>@string/state</item>
+        <item>Jawa Tengah</item>
+        <item>DI Yogyakarta</item>
+        <item>Jawa Timur</item>
+        <item>DKI Jakarta</item>
+    </string-array>
+
+    <string-array name="data_bank">
+        <item>@string/bank</item>
+        <item>BCA</item>
+        <item>BNI</item>
+        <item>BRI</item>
+        <item>Mandiri</item>
+    </string-array>
+
+    <string-array name="data_payment_method">
+        <item>@string/payment_method</item>
+        <item>ATM</item>
+        <item>E-Banking</item>
+        <item>Setoran Tunai</item>
+        <item>M-Banking-SMS Banking</item>
+    </string-array>
+
+    <string-array name="data_transport">
+        <item>@string/transport</item>
+        <item>Sepeda</item>
+        <item>Bus</item>
+        <item>Mobil</item>
+        <item>Motor</item>
+        <item>Lainnya</item>
+    </string-array>
+
+</resources>

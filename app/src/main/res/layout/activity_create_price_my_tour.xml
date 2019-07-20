@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardTripPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+            <LinearLayout
+                android:id="@+id/layTripPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="@string/priceQuestion"
+                    android:textColor="#E76B22" />
+
+                <RadioGroup
+                    android:id="@+id/rgQuestion"
+                    style="@style/MatchWrapLayout"
+                    android:background="#eeeeee"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/rbAll"
+                        style="@style/MatchWrapLayout"
+                        android:layout_weight="1"
+                        android:padding="5dp"
+                        android:text="@string/all" />
+
+                    <RadioButton
+                        android:id="@+id/rbExcludingMeals"
+                        style="@style/MatchWrapLayout"
+                        android:layout_weight="1"
+                        android:padding="5dp"
+                        android:text="@string/excludingMeals" />
+
+                    <RadioButton
+                        android:id="@+id/rbNotAll"
+                        style="@style/MatchWrapLayout"
+                        android:layout_weight="1"
+                        android:padding="5dp"
+                        android:text="@string/notAll" />
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Biaya Tambahan"
+                    android:textColor="#E76B22" />
+
+                <EditText
+                    android:id="@+id/edtAddPrice"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:gravity="start"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:textColorHint="#E76B22"
+                    android:inputType="textMultiLine"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Jumlah Travelers *"
+                    android:textColor="#E76B22" />
+
+                <EditText
+                    android:id="@+id/edtJmlTravelers"
+                    style="@style/AppTheme.EditTextMaterial"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:textColorHint="#E76B22"
+                    android:inputType="number"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Masukkan harga trip *"
+                    android:textColor="#E76B22" />
+
+                <EditText
+                    android:id="@+id/edtPriceTrip"
+                    style="@style/AppTheme.EditTextMaterial"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:textColorHint="#E76B22"
+                    android:inputType="numberDecimal"/>
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <Button
+            android:id="@+id/btnNext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cardTripPrice"
+            android:layout_alignParentBottom="true"
+            android:text="Next"
+            android:theme="@style/ButtonColoredPrimaryDark" />
+    </RelativeLayout>
+
+</ScrollView>

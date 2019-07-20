@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/progress_bar" />
+
+    <TextView
+        android:id="@+id/txtNoData"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="Tidak ada wisata"
+        android:textSize="18sp"
+        android:visibility="gone" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvListOrder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp" />
+
+    <include layout="@layout/view_error"/>
+
+    <RelativeLayout
+        android:id="@+id/layTraveler"
+        android:visibility="gone"
+        android:background="@android:color/white"
+        android:clickable="true"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:id="@+id/txtTraveler"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17dp"
+            android:layout_marginLeft="15dp"
+            android:textColor="#212121"
+            android:textStyle="bold"
+            android:text="Traveler"/>
+
+        <ImageView
+            android:id="@+id/imgClickDashboard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/ic_keyboard_arrow_right"
+            android:clickable="true" />
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:visibility="gone"
+        android:background="@color/colorPrimaryDark"/>
+
+    <RelativeLayout
+        android:id="@+id/layLocalguide"
+        android:background="@android:color/white"
+        android:clickable="true"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:id="@+id/txtLocalguide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17dp"
+            android:layout_marginLeft="15dp"
+            android:textColor="#212121"
+            android:textStyle="bold"
+            android:text="Local Guide"/>
+
+        <ImageView
+            android:id="@+id/imgClickLocalguide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/ic_keyboard_arrow_right"
+            android:clickable="true" />
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:visibility="gone"
+        android:background="@color/colorPrimaryDark"/>
+
+</RelativeLayout>

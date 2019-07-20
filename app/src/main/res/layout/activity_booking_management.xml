@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/layTraveler"
+        android:background="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:id="@+id/txtTraveler"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17dp"
+            android:layout_marginLeft="15dp"
+            android:textColor="#212121"
+            android:textStyle="bold"
+            android:text="Traveler"/>
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorPrimaryDark"/>
+
+    <RelativeLayout
+        android:id="@+id/layListMyBooking"
+        android:background="@android:color/white"
+        android:clickable="true"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17dp"
+            android:layout_marginLeft="45dp"
+            android:textColor="#212121"
+            android:text="My Booking"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/ic_keyboard_arrow_right" />
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorPrimaryDark"/>
+
+    <RelativeLayout
+        android:id="@+id/layPaymentHistory"
+        android:background="@android:color/white"
+        android:clickable="true"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17dp"
+            android:layout_marginLeft="45dp"
+            android:textColor="#212121"
+            android:text="History Pembayaran"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/ic_keyboard_arrow_right" />
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorPrimaryDark"/>
+
+    <RelativeLayout
+        android:id="@+id/layLocalGuide"
+        android:background="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17dp"
+            android:layout_marginLeft="15dp"
+            android:textColor="#212121"
+            android:textStyle="bold"
+            android:text="Local Guide"/>
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorPrimaryDark"/>
+
+    <RelativeLayout
+        android:id="@+id/layTripBooked"
+        android:background="@android:color/white"
+        android:clickable="true"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17dp"
+            android:layout_marginLeft="45dp"
+            android:textColor="#212121"
+            android:text="Trip Booked"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/ic_keyboard_arrow_right" />
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorPrimaryDark"/>
+
+    <RelativeLayout
+        android:id="@+id/layIncomeHistory"
+        android:background="@android:color/white"
+        android:clickable="true"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17dp"
+            android:layout_marginLeft="45dp"
+            android:textColor="#212121"
+            android:text="History Pendapatan"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/ic_keyboard_arrow_right" />
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:visibility="gone"
+        android:background="@color/colorPrimaryDark"/>
+
+</LinearLayout>

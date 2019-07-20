@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/layBillingDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
+        android:padding="5dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Firstname"
+                    android:textColor="#E76B22" />
+
+                <EditText
+                    android:id="@+id/edtFirstName"
+                    style="@style/AppTheme.EditTextMaterial"
+                    android:ems="10"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:textColorHint="#E76B22" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Lastname"
+                    android:textColor="#E76B22" />
+
+                <EditText
+                    android:id="@+id/edtLastName"
+                    style="@style/AppTheme.EditTextMaterial"
+                    android:ems="10"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:textColorHint="#E76B22" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Email"
+                    android:textColor="#E76B22" />
+
+                <EditText
+                    android:id="@+id/edtEmail"
+                    style="@style/AppTheme.EditTextMaterial"
+                    android:ems="10"
+                    android:inputType="textEmailAddress"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:textColorHint="#E76B22" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Phone"
+                    android:textColor="#E76B22" />
+
+                <EditText
+                    android:id="@+id/edtPhone"
+                    style="@style/AppTheme.EditTextMaterial"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:textColorHint="#E76B22" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Country"
+                    android:textColor="#E76B22" />
+
+                <Spinner
+                    android:id="@+id/spinCountry"
+                    style="@style/Widget.AppCompat.Spinner.Underlined"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:prompt="@string/country"
+                    android:spinnerMode="dropdown" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="State"
+                    android:textColor="#E76B22" />
+
+                <Spinner
+                    android:id="@+id/spinState"
+                    style="@style/Widget.AppCompat.Spinner.Underlined"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:prompt="@string/state"
+                    android:spinnerMode="dropdown" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="City"
+                    android:textColor="#E76B22" />
+
+                <EditText
+                    android:id="@+id/edtCity"
+                    style="@style/AppTheme.EditTextMaterial"
+                    android:ems="10"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:textColorHint="#E76B22" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Address"
+                    android:textColor="#E76B22" />
+
+                <EditText
+                    android:id="@+id/edtAddress"
+                    style="@style/AppTheme.EditTextMaterial"
+                    android:ems="10"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:textColorHint="#E76B22" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Postcode"
+                    android:textColor="#E76B22" />
+
+                <EditText
+                    android:id="@+id/edtPostcode"
+                    style="@style/AppTheme.EditTextMaterial"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:textColorHint="#E76B22" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Your Order"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <include layout="@layout/item_cart_tour" />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnOrder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Order"
+            android:textSize="15sp"
+            android:theme="@style/ButtonColoredPrimaryDark" />
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardTripDetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+            <LinearLayout
+                android:id="@+id/layTripDetail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Titik Kumpul *"
+                    android:textColor="#E76B22" />
+
+                <EditText
+                    android:id="@+id/edtGatehringPoint"
+                    style="@style/AppTheme.EditTextMaterial"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:textColorHint="#E76B22" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Latitude *"
+                    android:textColor="#E76B22" />
+
+                <EditText
+                    android:id="@+id/edtLatitude"
+                    style="@style/AppTheme.EditTextMaterial"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:textColorHint="#E76B22" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Longitude *"
+                    android:textColor="#E76B22" />
+
+                <EditText
+                    android:id="@+id/edtLongitude"
+                    style="@style/AppTheme.EditTextMaterial"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:textColorHint="#E76B22" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Detail Titik Kumpul"
+                    android:textColor="#E76B22" />
+
+                <EditText
+                    android:id="@+id/edtDetailKumpul"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:gravity="start"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:textColorHint="#E76B22"
+                    android:inputType="textMultiLine"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Jadwal *"
+                    android:textColor="#E76B22" />
+
+                <LinearLayout
+                    android:id="@+id/layJadwal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/grey_300"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/conSchedule"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"></LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <!--<EditText
+                            android:id="@+id/edtStartTime"
+                            android:layout_width="110dp"
+                            android:layout_height="wrap_content"
+                            android:hint="Start Time"
+                            android:inputType="time" />
+
+                        <EditText
+                            android:id="@+id/edtEndTime"
+                            android:layout_toRightOf="@id/edtStartTime"
+                            android:layout_marginLeft="5dp"
+                            android:layout_width="110dp"
+                            android:layout_height="wrap_content"
+                            android:hint="End Time"
+                            android:inputType="time" />
+
+                        <EditText
+                            android:id="@+id/edtDesc"
+                            android:layout_below="@id/edtStartTime"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Deskripsi"/>-->
+
+                        <Button
+                            android:id="@+id/btnAddFieldSchedule"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:gravity="center"
+                            android:onClick="onAddFieldSchedule"
+                            android:text="Tambah"
+                            android:textColor="@android:color/white"
+                            android:textSize="13sp"
+                            android:theme="@style/ButtonColoredPrimaryDark" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Frequently asked questions (FAQ) *"
+                    android:textColor="#E76B22" />
+
+                <LinearLayout
+                    android:id="@+id/layFaq"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <LinearLayout
+                        android:id="@+id/conFaq"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"></LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <!--<TextView
+                            android:id="@+id/txtQuestion1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:text="Apa istimewanya memilih paket wisata ini?" />
+
+                        <EditText
+                            android:id="@+id/edtAnswer1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp" />
+
+                        <TextView
+                            android:id="@+id/txtQuestion2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:text="Apa saja persiapan yang harus Anda lakukan?" />
+
+                        <EditText
+                            android:id="@+id/edtAnswer2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp" />
+
+                        <EditText
+                            android:id="@+id/edtQuestion"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Pertanyaan" />
+
+                        <EditText
+                            android:id="@+id/edtAnswer"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Jawaban"/>-->
+
+                        <Button
+                            android:id="@+id/btnAddFieldFaq"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:onClick="onAddFieldFaq"
+                            android:text="Tambah"
+                            android:gravity="center"
+                            android:textColor="@android:color/white"
+                            android:textSize="13sp"
+                            android:theme="@style/ButtonColoredPrimaryDark" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <Button
+            android:id="@+id/btnNext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@id/cardTripDetail"
+            android:text="Next"
+            android:theme="@style/ButtonColoredPrimaryDark" />
+    </RelativeLayout>
+
+</ScrollView>

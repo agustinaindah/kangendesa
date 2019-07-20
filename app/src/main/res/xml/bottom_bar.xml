@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tabs>
+    <tab
+        id="@+id/tab_home"
+        icon="@drawable/ic_home"
+        title="Home" />
+    <tab
+        id="@+id/tab_inbox"
+        icon="@drawable/ic_email"
+        title="Inbox" />
+    <tab
+        id="@+id/tab_pusat_bantuan"
+        icon="@drawable/ic_information"
+        title="Bantuan" />
+    <tab
+        id="@+id/tab_daftar_trip"
+        icon="@drawable/ic_assignment"
+        title="Daftar Trip Mu" />
+    <tab
+        id="@+id/tab_akun"
+        icon="@drawable/ic_account_circle"
+        title="Akun Saya" />
+</tabs>

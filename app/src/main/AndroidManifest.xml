@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.kangendesa.app">
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".KangenDesaApp"
+        android:allowBackup="true"
+        android:largeHeap="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".features.splashscreen.SplashscreenActivity"
+            android:theme="@style/AppTheme.Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".features.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".features.auth.login.LoginActivity"
+            android:theme="@style/AppTheme.Splash"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".features.auth.register.RegisterActivity"
+            android:theme="@style/AppTheme.Splash"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".features.auth.forgotpassword.ForgotPasswordActivity"
+            android:theme="@style/AppTheme.Splash"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".features.tour.detail.DetailTourActivity"
+            android:label="@string/title_activity_detail_tour"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".features.search.SearchActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".features.guide.guide_detail.DetailGuideActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".features.tour.ListTourActivity"
+            android:theme="@style/AppTheme"/>
+        <activity
+            android:name=".features.guide.ListGuideActivity"
+            android:theme="@style/AppTheme"/>
+        <activity
+            android:name=".features.order.OrderActivity"
+            android:theme="@style/AppTheme"/>
+        <activity
+            android:name=".features.order.PaymentMethodActivity"
+            android:theme="@style/AppTheme"/>
+        <activity
+            android:name=".features.order.order_result.OrderResultActivity"
+            android:theme="@style/AppTheme"/>
+        <activity
+            android:name=".features.bookingmanagement.traveler.mybooking.MyBookingActivity"
+            android:theme="@style/AppTheme"/>
+        <activity
+            android:name=".features.category.CategoryTourActivity"
+            android:theme="@style/AppTheme"/>
+        <activity
+            android:name=".features.category.category_detail.DetailCategoryActivity"
+            android:theme="@style/AppTheme"/>
+        <activity
+            android:name=".features.account_setting.AccountSettingActivity"
+            android:theme="@style/AppTheme"/>
+        <activity
+            android:name=".features.dashboard.DashboardActivity"
+            android:theme="@style/AppTheme"/>
+        <activity
+            android:name=".features.confirm_payment.ConfirmPaymentActivity"
+            android:theme="@style/AppTheme"/>
+        <activity
+            android:name=".features.dashboard.edit_profile.EditProfileActivity"
+            android:theme="@style/AppTheme"/>
+        <activity
+            android:name=".features.dashboard.change_password.ChangePasswordActivity"
+            android:theme="@style/AppTheme"/>
+        <activity
+            android:name=".features.tripmanagement.TripManagementActivity"
+            android:theme="@style/AppTheme"/>
+        <activity
+            android:name=".features.create_your_trip.CreateBasicMyTourActivity"
+            android:theme="@style/AppTheme"/>
+        <activity
+            android:name=".features.create_your_trip.CreateOverviewMyTourActivity"
+            android:theme="@style/AppTheme"/>
+        <activity
+            android:name=".features.create_your_trip.CreateDetailMyTourActivity"
+            android:theme="@style/AppTheme"/>
+        <activity
+            android:name=".features.create_your_trip.CreatePriceMyTourActivity"
+            android:theme="@style/AppTheme"/>
+        <activity
+            android:name=".features.create_your_trip.CreateConditionsMyTourActivity"
+            android:theme="@style/AppTheme"/>
+        <activity
+            android:name=".features.create_your_trip.CreateSubmitMyTourActivity"
+            android:theme="@style/AppTheme"/>
+        <activity
+            android:name=".features.account_setting.verifyemail.VerifyEmailAcivity"
+            android:theme="@style/AppTheme"/>
+        <activity
+            android:name=".features.bookingmanagement.BookingManagementActivity"
+            android:theme="@style/AppTheme"/>
+        <activity
+            android:name=".features.bookingmanagement.traveler.paymenthistory.PaymentHistoryActivity"
+            android:theme="@style/AppTheme"/>
+        <activity
+            android:name=".features.bookingmanagement.local_guide.tripbooked.TripBookedActivity"
+            android:theme="@style/AppTheme"/>
+        <activity
+            android:name=".features.bookingmanagement.traveler.paymenthistory.detail_history_payment.DetailPaymentHistoryActivity"
+            android:theme="@style/AppTheme"/>
+        <activity
+            android:name=".features.bookingmanagement.traveler.mybooking.payment_confirm.PaymentConfirmActivity"
+            android:theme="@style/AppTheme"/>
+        <activity
+            android:name=".features.HelpDeskActivity"
+            android:theme="@style/AppTheme"/>
+        <activity
+            android:name=".features.create_your_trip.edit.EditBasicMyTourActivity"
+            android:theme="@style/AppTheme"/>
+        <activity
+            android:name=".features.create_your_trip.edit.EditOverviewMyTourActivity"
+            android:theme="@style/AppTheme"/>
+        <activity
+            android:name=".features.create_your_trip.edit.EditDetailMyTourActivity"
+            android:theme="@style/AppTheme"/>
+        <activity
+            android:name=".features.create_your_trip.edit.EditPriceMyTourActivity"
+            android:theme="@style/AppTheme"/>
+        <activity
+            android:name=".features.create_your_trip.edit.EditConditionsMyTourActivity"
+            android:theme="@style/AppTheme"/>
+        <activity
+            android:name=".features.create_your_trip.edit.EditSubmitMyTourActivity"
+            android:theme="@style/AppTheme"/>
+    </application>
+
+</manifest>

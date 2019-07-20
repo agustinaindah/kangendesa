@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/MatchMatchLayout"
+    android:background="@drawable/bakcground"
+    android:orientation="vertical">
+
+    <LinearLayout
+        style="@style/MatchMatchLayout"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/imgLogo"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="6dp"
+            android:layout_marginTop="100dp"
+            android:src="@drawable/logo_kangendesa" />
+
+        <RelativeLayout
+            style="@style/MatchWrapLayout"
+            android:layout_margin="20dp">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/inputUsername"
+                style="@style/TextLabel"
+                android:padding="5dp"
+                android:textColorHint="#E76B22">
+
+                <EditText
+                    android:id="@+id/edtUsername"
+                    style="@style/AppTheme.EditTextMaterial"
+                    android:ems="10"
+                    android:textColorHint="#E76B22"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:hint="@string/username" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/inputPassword"
+                style="@style/TextLabel"
+                android:layout_below="@id/inputUsername"
+                android:layout_marginBottom="5dp"
+                android:padding="5dp"
+                android:textColorHint="#E76B22"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="#E76B22">
+
+                <EditText
+                    android:id="@+id/edtPassword"
+                    style="@style/AppTheme.EditTextMaterial"
+                    android:ems="10"
+                    android:hint="@string/password"
+                    android:textColorHint="#E76B22"
+                    android:inputType="textPassword" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:id="@+id/txtForgotPassword"
+                style="@style/MatchWrapLayout"
+                android:layout_below="@id/inputPassword"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="Forgot Password?"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnLogin"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtForgotPassword"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/btn_round"
+                android:padding="5dp"
+                android:text="Login"
+                android:textColor="#fc9c34"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

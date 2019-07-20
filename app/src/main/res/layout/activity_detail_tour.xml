@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".features.tour.detail.DetailTourActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:fitsSystemWindows="true"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <!--android:layout_height="@dimen/app_bar_height"-->
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapsingToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:contentScrim="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:toolbarId="@+id/toolbar">
+
+            <com.daimajia.slider.library.SliderLayout
+                android:id="@+id/sliderBannerDetail"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:fitsSystemWindows="true" />
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin"
+                app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_detail_tour" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="bottom|start"
+        android:background="@android:color/white"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <Button
+            android:id="@+id/btnOrderNow"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:background="@color/colorPrimaryDark"
+            android:text="Pesan Sekarang"
+            android:textColor="@android:color/white" />
+
+        <!--<Button
+            android:id="@+id/btnCallToAction"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/btn_border"
+            android:drawableRight="@drawable/ic_chat"
+            android:gravity="center"
+            android:textColor="@color/colorPrimaryDark" />-->
+
+        <ImageButton
+            android:id="@+id/btnCallToAction"
+            android:layout_width="110dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/btn_border"
+            android:src="@drawable/ic_chat"/>
+
+    </LinearLayout>
+
+    <include layout="@layout/progress_layout"/>
+
+    <include layout="@layout/view_error"/>
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cardItemListTrip"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:clickable="true"
+    android:background="@drawable/bg_all_rounded">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imgListTrip"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:scaleType="centerCrop"
+            android:src="@color/grey_300"/>
+
+        <TextView
+            android:id="@+id/txtJudulListTrip"
+            android:layout_below="@id/imgListTrip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:ellipsize="end"
+            android:textColor="#616161"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:text="Judul List Trip"/>
+
+        <TextView
+            android:id="@+id/txtPriceListTrip"
+            android:layout_below="@id/txtJudulListTrip"
+            android:layout_gravity="bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="13sp"
+            android:text="Rp 2.000.000"/>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

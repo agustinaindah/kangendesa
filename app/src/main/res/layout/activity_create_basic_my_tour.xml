@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardTripBasic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+            <LinearLayout
+                android:id="@+id/layTripBasic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Nama Trip *"
+                    android:textColor="#E76B22" />
+
+                <EditText
+                    android:id="@+id/edtTripName"
+                    style="@style/AppTheme.EditTextMaterial"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:textColorHint="#E76B22" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Detail Trip *"
+                    android:textColor="#E76B22" />
+
+                <EditText
+                    android:id="@+id/edtTripDetail"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:gravity="start"
+                    android:inputType="textMultiLine"
+                    android:textColorHint="#E76B22" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Photo Cover*"
+                    android:textColor="#E76B22" />
+
+                <RelativeLayout
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/bg_all_rounded">
+
+                    <ImageView
+                        android:id="@+id/imgPhotoCover"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:background="@color/grey_300"
+                        android:scaleType="centerCrop" />
+
+                    <Button
+                        android:id="@+id/btnChoosePhotoCover"
+                        android:layout_width="match_parent"
+                        android:layout_height="53dp"
+                        android:layout_marginTop="67dp"
+                        android:gravity="center"
+                        android:text="Pilih File"
+                        android:textSize="12sp"
+                        android:theme="@style/ButtonColoredPrimaryDark" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Photo Detail*"
+                    android:textColor="#E76B22" />
+
+                <GridView
+                    android:id="@+id/gvPhotoDetail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:numColumns="3"
+                    android:background="@color/grey_300"></GridView>
+
+                <Button
+                    android:id="@+id/btnChooseFile"
+                    android:layout_width="120dp"
+                    android:layout_height="53dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:text="Pilih File"
+                    android:textSize="12sp"
+                    android:theme="@style/ButtonColoredPrimaryDark" />
+
+                <RelativeLayout
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/bg_all_rounded"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/imgPhotoDetail"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:background="@color/grey_300"
+                        android:scaleType="centerCrop" />
+
+                    <Button
+                        android:id="@+id/btnChooseFileDetail"
+                        android:layout_width="match_parent"
+                        android:layout_height="53dp"
+                        android:layout_marginTop="67dp"
+                        android:gravity="center"
+                        android:text="Pilih File"
+                        android:textSize="12sp"
+                        android:theme="@style/ButtonColoredPrimaryDark" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <Button
+            android:id="@+id/btnNext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@id/cardTripBasic"
+            android:text="Next"
+            android:theme="@style/ButtonColoredPrimaryDark" />
+    </RelativeLayout>
+
+</ScrollView>

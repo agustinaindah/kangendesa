@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardTripConditions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+            <LinearLayout
+                android:id="@+id/layTripConditions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Extra Conditions (Optional) *"
+                    android:textColor="#E76B22" />
+
+                <EditText
+                    android:id="@+id/edtExtraCondition"
+                    style="@style/AppTheme.EditTextMaterial"
+                    android:inputType="textMultiLine"
+                    android:clickable="true"
+                    android:focusable="false"
+                    android:hint="Extra condition" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:orientation="vertical">
+
+                    <CheckBox
+                        android:id="@+id/cbSmartCasual"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Smart Casual" />
+
+                    <CheckBox
+                        android:id="@+id/cbPhysical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Physical Strength Required"/>
+
+                    <CheckBox
+                        android:id="@+id/cbVegetarian"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Vegetarian Food Available"/>
+
+                    <CheckBox
+                        android:id="@+id/cbChildrenFriendly"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Children Friendly" />
+
+                    <CheckBox
+                        android:id="@+id/cbFlexible"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Flexible Plan" />
+
+                    <CheckBox
+                        android:id="@+id/cbSeasonal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Seasonal Activities"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Hari Beroperasi *"
+                    android:textColor="#E76B22" />
+
+                <EditText
+                    android:id="@+id/edtDay"
+                    style="@style/AppTheme.EditTextMaterial"
+                    android:inputType="textMultiLine"
+                    android:clickable="true"
+                    android:focusable="false"
+                    android:hint="Senin" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:visibility="gone"
+                    android:orientation="vertical">
+
+                    <Switch
+                        android:id="@+id/switchSenin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Senin"
+                        android:padding="5dp"
+                        android:gravity="center_vertical"/>
+
+                    <Switch
+                        android:id="@+id/switchSelasa"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Selasa"
+                        android:padding="5dp"
+                        android:gravity="center_vertical"/>
+
+                    <Switch
+                        android:id="@+id/switchRabu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rabu"
+                        android:padding="5dp"
+                        android:gravity="center_vertical"/>
+
+                    <Switch
+                        android:id="@+id/switchKamis"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Kamis"
+                        android:padding="5dp"
+                        android:gravity="center_vertical"/>
+
+                    <Switch
+                        android:id="@+id/switchJumat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Jumat"
+                        android:padding="5dp"
+                        android:gravity="center_vertical"/>
+
+                    <Switch
+                        android:id="@+id/switchSabtu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sabtu"
+                        android:padding="5dp"
+                        android:gravity="center_vertical"/>
+
+                    <Switch
+                        android:id="@+id/switchMinggu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Minggu"
+                        android:padding="5dp"
+                        android:gravity="center_vertical"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <Button
+            android:id="@+id/btnNext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cardTripConditions"
+            android:layout_alignParentBottom="true"
+            android:text="Next"
+            android:theme="@style/ButtonColoredPrimaryDark" />
+    </RelativeLayout>
+
+</ScrollView>

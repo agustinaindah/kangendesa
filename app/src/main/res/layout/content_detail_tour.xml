@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".features.tour.detail.DetailTourActivity"
+    tools:showIn="@layout/activity_detail_tour">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardItemProduct"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/layItemProduct"
+                style="@style/MatchMatchLayout"
+                android:layout_margin="5dp">
+
+                <TextView
+                    android:id="@+id/txtItemProductTitle"
+                    style="@style/MatchWrapLayout"
+                    android:ellipsize="end"
+                    android:fontFamily="sans-serif-medium"
+                    android:gravity="center_vertical"
+                    android:padding="5dp"
+                    android:text=""
+                    android:textColor="#212121"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/txtItemProductPrice"
+                    style="@style/WrapWrapLayout"
+                    android:layout_below="@id/txtItemProductTitle"
+                    android:layout_marginLeft="3dp"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text=""
+                    android:textColor="#fb8c00"
+                    android:textSize="17sp" />
+
+                <RatingBar
+                    android:id="@+id/ratingBar"
+                    style="?android:attr/ratingBarStyleSmall"
+                    android:layout_width="88dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignTop="@+id/txtItemProductLocation"
+                    android:layout_marginEnd="12dp"
+                    android:max="5"
+                    android:padding="5dp"
+                    android:progressTint="#ffc400"
+                    android:rating="5" />
+
+                <TextView
+                    android:id="@+id/txtItemProductLocation"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtItemProductPrice"
+                    android:drawableLeft="@drawable/ic_location_on"
+                    android:drawablePadding="3dp"
+                    android:drawableTint="@color/material_red"
+                    android:fontFamily="sans-serif-medium"
+                    android:padding="5dp"
+                    android:text=""
+                    android:textColor="#757575"
+                    android:textSize="15sp" />
+
+                <RelativeLayout
+                    android:id="@+id/layDiscount"
+                    style="@style/MatchWrapLayout"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/txtItemProductDisc"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@color/colorPrimary"
+                        android:gravity="center"
+                        android:singleLine="false"
+                        android:text="0%"
+                        android:textColor="@android:color/white"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardDeskripsi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cardItemProduct"
+            android:layout_marginTop="5dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dp">
+
+                <TextView
+                    android:id="@+id/txtJudulDesc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Deskripsi Perjalanan"
+                    android:textColor="#424242"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/txtDeskripsi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txtJudulDesc"
+                    android:padding="7dp"
+                    android:text=""
+                    android:textColor="#424242"
+                    android:textSize="13sp" />
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardTourGuide"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cardDeskripsi"
+            android:layout_marginTop="5dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dp">
+
+                <TextView
+                    android:id="@+id/txtTourGuide"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Tour Guide"
+                    android:textColor="#424242"
+                    android:textSize="15sp" />
+
+                <com.mikhaellopez.circularimageview.CircularImageView
+                    android:id="@+id/imgAuthor"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginTop="32dp"
+                    android:src="@mipmap/ic_launcher"
+                    app:civ_border_color="@color/colorPrimaryDark"
+                    app:civ_border_width="2dp" />
+
+                <TextView
+                    android:id="@+id/txtGuideName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txtTourGuide"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@id/imgAuthor"
+                    android:ellipsize="end"
+                    android:padding="5dp"
+                    android:text=""
+                    android:textColor="#424242"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/txtRegisteredMember"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txtGuideName"
+                    android:layout_marginLeft="7dp"
+                    android:layout_toRightOf="@id/imgAuthor"
+                    android:padding="5dp"
+                    android:text=""
+                    android:textColor="#424242"
+                    android:textSize="12sp" />
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardJadwalPerjalanan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cardTourGuide"
+            android:layout_marginTop="5dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dp">
+
+                <TextView
+                    android:id="@+id/txtJudul"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Jadwal Perjalanan"
+                    android:textColor="#424242"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/txtScheduleTrip"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txtJudul"
+                    android:padding="7dp"
+                    android:textSize="12sp" />
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardFaq"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cardJadwalPerjalanan"
+            android:layout_marginTop="5dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dp">
+
+                <TextView
+                    android:id="@+id/txtJudulFaq"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Frequently Asked Question (FAQ)"
+                    android:textColor="#424242"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/txtFaq"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txtJudulFaq"
+                    android:padding="7dp"
+                    android:textSize="12sp" />
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardQty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cardFaq"
+            android:layout_marginBottom="100dp"
+            android:layout_marginTop="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="7dp"
+                    android:textColor="#424242"
+                    android:text="Tanggal Booking "/>
+
+                <TextView
+                    android:id="@+id/txtBookingDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="7dp"
+                    android:drawablePadding="5dp"
+                    android:drawableLeft="@drawable/ic_calendar"
+                    android:textSize="16sp"
+                    android:text="01 January 2019"/>
+
+                <LinearLayout
+                    android:id="@+id/layQty"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:padding="7dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/txtTitleTotalPerson"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="5dp"
+                        android:text="Jumlah orang : "
+                        android:textColor="#424242" />
+
+                    <Button
+                        android:id="@+id/btnDecrease"
+                        android:layout_width="30dp"
+                        android:layout_height="25dp"
+                        android:layout_weight="1"
+                        android:background="@color/colorPrimary"
+                        android:text="-"
+                        android:textColor="@android:color/black"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/txtQty"
+                        android:layout_width="30dp"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/edit_text_border"
+                        android:ems="3"
+                        android:gravity="center"
+                        android:hint="1"
+                        android:textSize="12sp" />
+
+                    <Button
+                        android:id="@+id/btnIncrease"
+                        android:layout_width="30dp"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:background="@color/colorPrimary"
+                        android:text="+"
+                        android:textColor="@android:color/black"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </RelativeLayout>
+
+</android.support.v4.widget.NestedScrollView>

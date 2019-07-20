@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="7dp">
+
+       <EditText
+           android:id="@+id/txtStart"
+           android:layout_width="110dp"
+           android:layout_height="wrap_content"
+           android:inputType="time"
+           android:hint="Start time"/>
+
+        <EditText
+            android:id="@+id/txtEnd"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="115dp"
+            android:inputType="time"
+            android:hint="End time"/>
+
+        <EditText
+            android:id="@+id/txtDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/txtStart"
+            android:inputType="text"
+            android:hint="Desc"/>
+
+        <Button
+            android:id="@+id/btnDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="230dp"
+            android:onClick="onDeleteSchedule"
+            android:text="Hapus"
+            android:textColor="@android:color/white"
+            android:textSize="13sp"
+            android:theme="@style/ButtonColoredPrimaryDark" />
+
+</RelativeLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <RelativeLayout
+        android:id="@+id/headAfterLogin"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@mipmap/ic_launcher"
+        android:orientation="vertical"
+        android:visibility="visible"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/imgProfileHead"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/img_profile"
+            app:civ_border_color="@android:color/white"
+            app:civ_border_width="1.5dp" />
+
+        <TextView
+            android:id="@+id/txtNama"
+            style="@style/MatchWrapLayout"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/imgProfileHead"
+            android:gravity="center"
+            android:text="Tio Tamara"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtEmail"
+            android:visibility="gone"
+            style="@style/MatchWrapLayout"
+            android:layout_below="@+id/txtNama"
+            android:layout_toRightOf="@+id/imgProfileHead"
+            android:text="Email"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="@android:color/white"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/headBeforeLogin"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@mipmap/ic_launcher"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+        <ImageView
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="90dp"
+            android:layout_gravity="center"
+            android:src="@drawable/logo_kangendesa_white" />
+
+    </LinearLayout>
+
+</RelativeLayout>

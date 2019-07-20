@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/layDashboard"
+        android:background="@android:color/white"
+        android:clickable="true"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:id="@+id/txtDashboard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17dp"
+            android:layout_marginLeft="15dp"
+            android:textColor="#212121"
+            android:textStyle="bold"
+            android:text="Dashboard"/>
+
+        <ImageView
+            android:id="@+id/imgClickDashboard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/ic_keyboard_arrow_right"
+            android:clickable="true" />
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorPrimaryDark"/>
+
+    <RelativeLayout
+        android:id="@+id/layVerifyEmail"
+        android:background="@android:color/white"
+        android:clickable="true"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:id="@+id/txtVerifyEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17dp"
+            android:layout_marginLeft="15dp"
+            android:textColor="#212121"
+            android:textStyle="bold"
+            android:text="Verify Email"/>
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorPrimaryDark"/>
+
+    <RelativeLayout
+        android:id="@+id/layListBooking"
+        android:background="@android:color/white"
+        android:clickable="true"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17dp"
+            android:layout_marginLeft="15dp"
+            android:textColor="#212121"
+            android:textStyle="bold"
+            android:text="Booking Management"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/ic_keyboard_arrow_right" />
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorPrimaryDark"/>
+
+    <RelativeLayout
+        android:id="@+id/layListTrip"
+        android:background="@android:color/white"
+        android:clickable="true"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17dp"
+            android:layout_marginLeft="15dp"
+            android:textColor="#212121"
+            android:textStyle="bold"
+            android:text="Trip Management"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/ic_keyboard_arrow_right" />
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorPrimaryDark"/>
+
+    <RelativeLayout
+        android:id="@+id/layConfirmPayment"
+        android:background="@android:color/white"
+        android:clickable="true"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17dp"
+            android:layout_marginLeft="15dp"
+            android:textColor="#212121"
+            android:textStyle="bold"
+            android:text="Konfirmasi Pembayaran"/>
+
+        <ImageView
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/ic_keyboard_arrow_right" />
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorPrimaryDark"/>
+
+    <RelativeLayout
+        android:id="@+id/layLogout"
+        android:background="@android:color/white"
+        android:clickable="true"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17dp"
+            android:layout_marginLeft="15dp"
+            android:textColor="#212121"
+            android:textStyle="bold"
+            android:text="Logout"/>
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorPrimaryDark"/>
+
+</LinearLayout>

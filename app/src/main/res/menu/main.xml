@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_search"
+        android:icon="@drawable/ic_search"
+        android:iconTint="@color/colorPrimaryDark"
+        android:title="Search"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/action_chat"
+        android:icon="@drawable/ic_whatsapp"
+        android:visible="false"
+        android:iconTint="@color/colorPrimaryDark"
+        android:title="Whatsapp"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/action_cart"
+        android:icon="@drawable/ic_cart_outline"
+        android:visible="false"
+        android:iconTint="@color/colorPrimaryDark"
+        android:title="Cart"
+        app:showAsAction="ifRoom" />
+
+</menu>

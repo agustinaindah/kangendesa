@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/layConfirmPayment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
+        android:padding="5dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="No Order"
+                    android:textColor="#E76B22" />
+
+                <EditText
+                    android:id="@+id/edtNoOrder"
+                    style="@style/AppTheme.EditTextMaterial"
+                    android:ems="10"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:textColorHint="#E76B22" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Email Order"
+                    android:textColor="#E76B22" />
+
+                <EditText
+                    android:id="@+id/edtEmailOrder"
+                    style="@style/AppTheme.EditTextMaterial"
+                    android:ems="10"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:textColorHint="#E76B22" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Bank Tujuan"
+                    android:textColor="#E76B22" />
+
+                <Spinner
+                    android:id="@+id/spinBankTujuan"
+                    style="@style/Widget.AppCompat.Spinner.Underlined"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:prompt="@string/bank"
+                    android:spinnerMode="dropdown" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Bank Anda"
+                    android:textColor="#E76B22" />
+
+                <EditText
+                    android:id="@+id/edtBankAnda"
+                    style="@style/AppTheme.EditTextMaterial"
+                    android:ems="10"
+                    android:focusableInTouchMode="true"
+                    android:textColorHint="#E76B22"
+                    android:padding="10dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Rekening Atas Nama"
+                    android:textColor="#E76B22" />
+
+                <EditText
+                    android:id="@+id/edtRekAtasNama"
+                    style="@style/AppTheme.EditTextMaterial"
+                    android:ems="10"
+                    android:focusableInTouchMode="true"
+                    android:textColorHint="#E76B22"
+                    android:padding="10dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Metode Transfer"
+                    android:textColor="#E76B22" />
+
+                <Spinner
+                    android:id="@+id/spinMetodeTransfer"
+                    style="@style/Widget.AppCompat.Spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:prompt="@string/payment_method"
+                    android:spinnerMode="dropdown" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Nominal Transfer"
+                    android:textColor="#E76B22" />
+
+                <EditText
+                    android:id="@+id/edtNominalTransfer"
+                    style="@style/AppTheme.EditTextMaterial"
+                    android:ems="10"
+                    android:focusable="true"
+                    android:inputType="numberDecimal"
+                    android:focusableInTouchMode="true"
+                    android:textColorHint="#E76B22" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Tanggal Transfer"
+                    android:textColor="#E76B22" />
+
+               <TextView
+                   android:id="@+id/txtTglTransfer"
+                   android:clickable="true"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:padding="5dp"
+                   android:textSize="16sp"
+                   android:text="01 January 2019"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Screenshoot"
+                    android:textColor="#E76B22" />
+
+                <RelativeLayout
+                    android:layout_width="180dp"
+                    android:layout_height="180dp"
+                    android:background="@drawable/bg_all_rounded"
+                    android:layout_gravity="center">
+
+                    <ImageView
+                        android:id="@+id/imgScreenshoot"
+                        android:layout_width="180dp"
+                        android:layout_height="180dp"
+                        android:background="@color/grey_300" />
+
+                    <Button
+                        android:id="@+id/btnChooseFile"
+                        android:layout_width="match_parent"
+                        android:layout_height="53dp"
+                        android:layout_marginTop="120dp"
+                        android:gravity="center"
+                        android:text="Pilih File"
+                        android:textSize="12sp"
+                        android:theme="@style/ButtonColoredPrimaryDark" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnConfirm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Konfirmasi Pembayaran"
+            android:textSize="15sp"
+            android:theme="@style/ButtonColoredPrimaryDark" />
+
+    </LinearLayout>
+
+</RelativeLayout>

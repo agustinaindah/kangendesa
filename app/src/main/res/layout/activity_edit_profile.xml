@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/layChangePhoto"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@color/grey_300">
+
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:id="@+id/imgProfile"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="22dp"
+                android:src="@mipmap/ic_launcher"
+                app:civ_border_color="@color/colorPrimaryDark"
+                app:civ_border_width="2dp" />
+
+            <Button
+                android:id="@+id/btnChangePhoto"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imgProfile"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="7dp"
+                android:text="Ganti Foto"
+                android:theme="@style/ButtonColoredPrimaryDark" />
+
+        </RelativeLayout>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardPersonalData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Username"
+                    android:textColor="#E76B22" />
+
+                <EditText
+                    android:id="@+id/edtUsername"
+                    style="@style/AppTheme.EditTextMaterial"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:textColorHint="#E76B22" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Firstname *"
+                    android:textColor="#E76B22" />
+
+                <EditText
+                    android:id="@+id/edtFirstname"
+                    style="@style/AppTheme.EditTextMaterial"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:textColorHint="#E76B22" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Lastname *"
+                    android:textColor="#E76B22" />
+
+                <EditText
+                    android:id="@+id/edtLastname"
+                    style="@style/AppTheme.EditTextMaterial"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:textColorHint="#E76B22" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Nickname *"
+                    android:textColor="#E76B22" />
+
+                <EditText
+                    android:id="@+id/edtNickname"
+                    style="@style/AppTheme.EditTextMaterial"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:textColorHint="#E76B22" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Tanggal Lahir *"
+                    android:textColor="#E76B22" />
+
+                <TextView
+                    android:id="@+id/txtBirthdate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:padding="5dp"
+                    android:text="11 February 2019"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Jenis Kelamin *"
+                    android:textColor="#E76B22" />
+
+                <RadioGroup
+                    android:id="@+id/rgGender"
+                    style="@style/MatchWrapLayout"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rbGenderMale"
+                        style="@style/MatchWrapLayout"
+                        android:layout_weight="1"
+                        android:text="@string/male" />
+
+                    <RadioButton
+                        android:id="@+id/rbGenderFemale"
+                        style="@style/MatchWrapLayout"
+                        android:layout_weight="1"
+                        android:checked="true"
+                        android:text="@string/female" />
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Bahasa"
+                    android:textColor="#E76B22" />
+
+                <EditText
+                    android:id="@+id/edtLanguage"
+                    style="@style/AppTheme.EditTextMaterial"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:textColorHint="#E76B22" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Video Link Url"
+                    android:textColor="#E76B22" />
+
+                <EditText
+                    android:id="@+id/edtVideoLinkUrl"
+                    style="@style/AppTheme.EditTextMaterial"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:textColorHint="#E76B22" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Alamat *"
+                    android:textColor="#E76B22" />
+
+                <EditText
+                    android:id="@+id/edtAddress"
+                    style="@style/AppTheme.EditTextMaterial"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:textColorHint="#E76B22" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Domisili"
+                    android:textColor="#E76B22" />
+
+                <EditText
+                    android:id="@+id/edtDomisili"
+                    style="@style/AppTheme.EditTextMaterial"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:textColorHint="#E76B22" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Tentang Dirimu"
+                    android:textColor="#E76B22" />
+
+                <EditText
+                    android:id="@+id/edtAboutMe"
+                    style="@style/AppTheme.EditTextMaterial"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:textColorHint="#E76B22" />
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardFaq"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="FAQ"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Apa Hobimu"
+                    android:textColor="#E76B22" />
+
+                <EditText
+                    android:id="@+id/edtMyHobby"
+                    style="@style/AppTheme.EditTextMaterial"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:textColorHint="#E76B22" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Mengapa saya menjadi Local Guide?"
+                    android:textColor="#E76B22" />
+
+                <EditText
+                    android:id="@+id/edtLocalGuide"
+                    style="@style/AppTheme.EditTextMaterial"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:textColorHint="#E76B22" />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <Button
+            android:id="@+id/btnSaveProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Simpan"
+            android:theme="@style/ButtonColoredPrimaryDark" />
+
+    </LinearLayout>
+
+</ScrollView>

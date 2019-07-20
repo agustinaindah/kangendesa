@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardTotalPembayaran"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:text="Total Pembayaran :"/>
+
+            <TextView
+                android:id="@+id/txtTotalPembayaran"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:gravity="left"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="15sp"
+                android:text="Rp 450.000"/>
+
+        </LinearLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardPaymentMethod"
+        android:layout_below="@id/cardTotalPembayaran"
+        style="@style/MatchWrapLayout"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp">
+
+        <LinearLayout
+            style="@style/MatchWrapLayout"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtPaymentMethod"
+                style="@style/MatchWrapLayout"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Pilih Pembayaran"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/spinPaymentMethod"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp" />
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnPembayaran"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pembayaran"
+            android:textSize="15sp"
+            android:theme="@style/ButtonColoredPrimaryDark" />
+
+    </LinearLayout>
+
+</RelativeLayout>
